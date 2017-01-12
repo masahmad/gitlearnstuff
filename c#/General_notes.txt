@@ -1,0 +1,41 @@
+
+
+
+
+
+---------------------------------------------------
+
+Value Types / Reference Types
+-----------------------------
+
+
+Nullable Types
+Value types cannot be null ( non nullable)
+
+e.g. int x= null;   // not ok!
+
+e.g. string name = null; // ok!
+
+
+however to make it nullable add a '?'
+
+int? x = null
+
+//  useful for bool true/ false - if user did not answer a question then a null value is more appropriate than false.
+
+
+
+---------------------------------------------------
+
+
+
+
+---------------------------------------------------
+
+
+
+
+---------------------------------------------------
+
+
+

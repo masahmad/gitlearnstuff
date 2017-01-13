@@ -1,0 +1,23 @@
+Grunt tuts
+NodeJS
+NPM
+Protractor
+SASS
+Angular CLI
+Angular 
+Javascript oo
+Agile / Scrum
+SoLID
+RXJS
+
+-----------------------------------------
+
+teamcity (CI)
+Octopus deploy
+Dependancy Injection
+NUNIT
+Moq
+
+-----------------------------------------
+
+

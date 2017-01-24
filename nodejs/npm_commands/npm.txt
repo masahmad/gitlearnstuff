@@ -1,0 +1,8 @@
+
+
+// lists all global packages
+npm -g list
+
+
+
+

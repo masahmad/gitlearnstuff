@@ -1,0 +1,1 @@
+C:\work\vslearn\kb\Japikse_SolidPatterns\PatternsExamplesTests\obj\Debug\PatternsExamplesTests.csprojResolveAssemblyReference.cache

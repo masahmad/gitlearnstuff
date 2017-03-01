@@ -1,0 +1,6 @@
+\\sw620_f\ahmadma\visual studio 2013\Projects\Hack2\Hack2\bin\Debug\Hack2.exe.config
+\\sw620_f\ahmadma\visual studio 2013\Projects\Hack2\Hack2\obj\Debug\Hack2.csprojResolveAssemblyReference.cache
+\\sw620_f\ahmadma\visual studio 2013\Projects\Hack2\Hack2\bin\Debug\Hack2.exe
+\\sw620_f\ahmadma\visual studio 2013\Projects\Hack2\Hack2\bin\Debug\Hack2.pdb
+\\sw620_f\ahmadma\visual studio 2013\Projects\Hack2\Hack2\obj\Debug\Hack2.exe
+\\sw620_f\ahmadma\visual studio 2013\Projects\Hack2\Hack2\obj\Debug\Hack2.pdb

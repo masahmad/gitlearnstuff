@@ -17,8 +17,15 @@ require(['lib/modules/template'], function(template) {
 
 
 require(['lib/modules/playlist'], function(template) {
-  template.getJsonPlay("vw play");
+ template.getJsonPlay("vw play");
 });
+
+
+
+require(['lib/modules/widget'], function(nw) {
+  nw.init();
+});
+
 
 
 

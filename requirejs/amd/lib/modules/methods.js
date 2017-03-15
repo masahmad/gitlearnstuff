@@ -37,12 +37,15 @@ methods.showAlert = function(arg) {
 			 //x loadContainer(MyPlayListTemplate, -1);
 
 			/* end  */
-			alert('loaded');
+			
+			//alert('loaded');
+			return jsonobj;
 
 		},
 		error : function (e) {
 			console.log(e.message);
-			alert('fail');
+			//alert('fail');
+			return jsonobj;
 		}
 	});
 	  

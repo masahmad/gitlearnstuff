@@ -1,7 +1,11 @@
 define(['jquery','methods'], function($,methods) {
   
+  // private var
   
-  var s,
+ var s;
+var privateVar=123;
+  
+  
   
   NewsWidget = {
   settings: {
@@ -14,6 +18,7 @@ define(['jquery','methods'], function($,methods) {
   init: function() {
     s = this.settings;
     this.bindUIActions();
+	//x=9;
   },
   
   bindUIActions: function() {
@@ -29,6 +34,12 @@ define(['jquery','methods'], function($,methods) {
     $(s.articleList).append('<br>hello');
     // using numToGet as param
   }
+  
+  
+  ,getPrivateFN: function() { return privateVar;}
+  
+  
+  ,getAjaxFN: function() {   return  methods.getAjax('http://localhost/playUX/api/playerdataapi'); }
   
   }
   

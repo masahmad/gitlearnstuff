@@ -38,14 +38,15 @@ methods.showAlert = function(arg) {
 
 			/* end  */
 			
-			//alert('loaded');
-			return jsonobj;
+			alert('loaded');
+			console.log(json[0].playname);
+			return json[0].playname;
 
 		},
 		error : function (e) {
 			console.log(e.message);
-			//alert('fail');
-			return jsonobj;
+			alert('fail');
+			return 'faily'
 		}
 	});
 	  

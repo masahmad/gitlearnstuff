@@ -1,41 +1,80 @@
 define(['jquery','methods'], function($,methods) {
   
-  // private var
-  
- var s;
+  // private var 
+var s;
 var privateVar=123;
+var jsonobj;
   
-  var jsonobj;
   
   
-  NewsWidget = {
-  settings: {
+  Container = {
+ 
+
+ settings: {
     numArticles: 5,
-    articleList: $("#article-list"),
-    moreButton: $("#load-button")
+    parentContainer: $("#page"),
   },
   
   
   init: function() {
     s = this.settings;
-    this.bindUIActions();
-	//x=9;
+   // this.bindUIActions();
+   this.loadContainer('split12.htm',7);
+	
   },
   
+  
+  
+  // bind
   bindUIActions: function() {
     s.moreButton.on("click", function() {
       NewsWidget.getMoreArticles(s.numArticles);
+	
     });
-  },
+  }
 	  	  
 	
+	
+	
+	
+ ,loadContainer(newTemplate, currentScreenContainerId) {
+	 
+	 alert('load container called');
+	 
+	// if (newTemplate.ScreenContainer != currentScreenContainerId) {
+		//var container = 'containers/' + newTemplate.ContainerFile;
+		var container = 'containers/' + newTemplate;
+		alert(container);
+		s.parentContainer.empty();
+		s.parentContainer.load(container, function (responseTxt, statusTxt, xhr) {
+			if (statusTxt == "success") {
+				console.log('loading container:' + container);
+				
+				/*
+				if (newTemplate.BGMediaType != '') {
+					ProcessMediaType(newTemplate.BGMediaType, newTemplate.BGMediaSource, "body");
+				}
+				*/
+								
+				//this.Playlist(newTemplate);
+			}
+			if (statusTxt == "error")
+				alert("Error: " + xhr.status + ": " + xhr.statusText);
+		});
+	//} 
+	/*
+	else {
+		this.Playlist(newTemplate);
+	}
+	*/
+	
+	
+	
+	 
+ }
   
   
-   getMoreArticles: function(numToGet) {
-    $(s.articleList).append('<br>hello');
-    // using numToGet as param
-  }
-  
+    
   
   ,getPrivateFN: function() { return privateVar;}
   
@@ -82,7 +121,9 @@ var privateVar=123;
   
   } 
   
+  
+  ,Playlist: function(a) {alert('playlist called')}
   }
   
-  return NewsWidget;
+  return Container;
 });

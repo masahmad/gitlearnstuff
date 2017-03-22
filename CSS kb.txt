@@ -1,0 +1,205 @@
+
+
+*** CSS ****
+
+---------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------
+
+PSEUDO CLASS
+
+selector:pseudo-class {
+property:value;}
+
+
+a:link{ color: blue }
+a:visited { color: red }
+---------------------------------------------------------------------------------
+
+PSEUDO-ELEMENTS
+
+Pseudo elements are made using a double colon (::) followed by the name of the pseudo element.
+Pseudo-elements are used to add special effects to some selectors, and can only be applied to block-level elements.
+
+Most commonly used pseudo-elements are ::first_line, ::first_letter, ::before, ::after
+
+
+---------------------------------------------------------------------------------
+Grouping
+
+        Grouping allows you to apply the same style to multiple elements with a single declaration. This is done by grouping the selectors into a list, separated by commas.
+
+e.g.)  h1, h2  { font-family: Helvetica; font-size: 20; }
+
+---------------------------------------------------------------------------------
+
+
+
+
+---------------------------------------------------------------------------------
+
+CSS box model is made up of margins, borders, padding, and content.
+Box model provides a structured way to space elements in relationship to each other
+
+box model width : left margin + border + content + r border + right margin
+
+
+---------------------------------------------------------------------------------
+
+css dimension values
+
+
+    auto
+    length
+    %
+    inherit
+
+
+---------------------------------------------------------------------------------
+
+
+How are inline and block elements different from each other?
+
+        A block element is an element that takes up the full width available, and has a line break before and after it. <h1>, <p>, <li>, and <div> are all examples of block elements.
+        An inline element only takes up as much width as necessary, cannot accept width and height values, and does not force line breaks. <a> and <span> are examples of inline elements
+
+
+
+
+---------------------------------------------------------------------------------
+How block elements can be centered with CSS1?
+
+Block level elements can be centered by:
+
+The margin-left and margin-right properties can be set to some explicit value:
+---------------------------------------------------------------------------------
+
+
+ Explain the difference between visibility:hidden and display:none
+
+        visibility:hidden simply hides the element, while it will still take up space and affect the layout of the document.
+        display:none also hides the element, but will not take up space and the page will appear as if the element is not present.
+
+---------------------------------------------------------------------------------
+
+Which font names are available on all platforms ?
+
+        Only five basic font families( serif, sans-serif, cursive, fantasy, and monsospace) are recognized across platforms, rather than specific fonts.
+        Specific font name recognitions will vary by browser.
+
+
+
+---------------------------------------------------------------------------------
+
+CSS combinators
+A combinator is something that explains the relationship between the selectors.
+
+
+    descendant selector (space)
+    child selector (>)  only children not grandchildren
+    adjacent sibling selector (+)  - note adjacent are not children e.g.  <h1>Heading</h1> <p> notes </p> - these are adjacent  so...   h1 + p { color:red;} wil lstyle first adjacent sibling
+    general sibling selector (~)   same as above but wil lstyle ALL siblings not just the first one
+
+
+
+
+---------------------------------------------------------------------------------
+
+Child selectors
+e.g. 
+ body > p { font-size:20px;}
+
+all P's within body
+
+ selects all elements that are the immediate children of a specified element.
+
+The following example selects all <p> elements that are IMMEDIATE CHILDREN (not gandchildren)  of a <body> elemen
+
+
+---------------------------------------------------------------------------------
+
+Positioning
+
+The position property is used to define whether a box is absolute, relative, static or fixed:
+
+    static is the default value and renders a box in the normal order of things, as they appear in the HTML.
+
+    relative is much like static but the box can be offset from its original position with the properties top, right, bottom and left.
+
+    absolute pulls a box out of the normal flow of the HTML and delivers it to a world all of its own. In this crazy little world, the absolute box can be placed nywhere on the page using top, right, bottom and left.
+   
+ fixed behaves like absolute, but it will absolutely position a box in reference to the browser window as opposed to the web page, so fixed boxes should stay exactly where they are on the screen even when the page is scrolled.
+
+
+
+
+---------------------------------------------------------------------------------
+CSS 3
+
+universal selector
+
+Using an asterisk (“ * ”), you can target everything under the sun. You can use it by itself to set global styles for a page, or as a descendant of a selector to set styles of everything within something.
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contact * {
+    display: block;
+}
+
+
+
+---------------------------------------------------------------------------------
+
+attribute selector
+
+
+abbr [title] { border-bottom: 1px dotted #ccc }   // container attribute title
+
+
+with attribute value
+
+input[type=text] { width: 200px; }  // contains a attribute value
+
+more than one attribute
+nput[type=text][disabled] { border: 1px solid #ccc }
+
+
+CSS 3 further allows you to match an attribute without being exact:
+
+    [attribute^=something] will match a the value of an attribute that begins with something.
+    [attribute$=something] will match a the value of an attribute that ends with something.
+    [attribute*=something] will match a the value of an attribute that contains something, be it in the beginning, middle, or end.
+
+So, as an example, you could style external links (eg. “http://www.htmldog.com”) differently to internal links (eg. “overhere.html”) in the following way:
+
+
+
+
+a[href^=http] {
+    padding-right: 10px;
+    background: url(arrow.png) right no-repeat;
+}
+
+
+
+---------------------------------------------------------------------------------
+Lord Vader Hates Furry Animals
+Declare In order for Hover to work
+Link, Visited, Hover, Active
+
+a:link {color: blue;}
+a:visited {color: purple;}
+a:hover {color: red;}
+a:active {color: yellow;}
+
+
+
+
+

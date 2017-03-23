@@ -1,0 +1,22 @@
+
+xmlhttprequest
+
+
+json.parse
+
+
+ternary
+
+!==
+
+
+
+
+
+so readychange for xmlhttprequest needs to be set before request.send  to the server
+
+canvwas top left is 0,0 and bottom right is example 200,200
+
+
+
+

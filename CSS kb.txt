@@ -16,7 +16,7 @@ property:value;}
 
 a:link{ color: blue }
 a:visited { color: red }
----------------------------------------------------------------------------------
+------------------------------------------------------------------ ---------------
 
 PSEUDO-ELEMENTS
 
@@ -187,8 +187,6 @@ a[href^=http] {
     background: url(arrow.png) right no-repeat;
 }
 
-
-
 ---------------------------------------------------------------------------------
 Lord Vader Hates Furry Animals
 Declare In order for Hover to work
@@ -199,7 +197,19 @@ a:visited {color: purple;}
 a:hover {color: red;}
 a:active {color: yellow;}
 
+-----------------------------------------------------------------------------------------
 
+The Difference Between :nth-child and :nth-of-type - index is 1th based
+<section>
+   <h1>Words</h1>
+   <p>Little</p>
+   <p>Piggy</p>    <!-- Want this one -->
+</section>
+
+remember
+:eq  indexis zero based
+
+-----------------------------------------------------------------------------------------
 
 
 

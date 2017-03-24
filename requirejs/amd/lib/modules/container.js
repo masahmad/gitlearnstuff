@@ -17,9 +17,14 @@ var jsonobj;
   
   
   init: function() {
+	alert('init called');
     s = this.settings;
    // this.bindUIActions();
-   this.loadContainer('split12.htm',7);
+   //this.loadContainer('split12.htm',7);
+   var rtn = this.getAjaxFN('http://localhost/playUX/api/playlistmasterapi/');
+   
+   console.log('xxxx');
+   console.log(rtn);
 	
   },
   
@@ -39,7 +44,7 @@ var jsonobj;
 	
  ,loadContainer(newTemplate, currentScreenContainerId) {
 	 
-	 alert('load container called');
+	 alert('loadcontainer called');
 	 
 	// if (newTemplate.ScreenContainer != currentScreenContainerId) {
 		//var container = 'containers/' + newTemplate.ContainerFile;
@@ -81,6 +86,7 @@ var jsonobj;
   
   ,getAjaxFN: function(arg) {   
   
+  alert('get Ajax called');
   	var dataz = 'templateClientKey=mas&fis=';
 
 	$.ajax({
@@ -105,9 +111,11 @@ var jsonobj;
 
 			/* end  */
 			
-			alert('loaded');
-			console.log(json[0].playname);
-			//jsonobj;
+			alert('ajax success');
+			//console.log(json[0].playname);
+			//console.log(json);
+			
+			jsonobj=json;
 
 		},
 		error : function (e) {

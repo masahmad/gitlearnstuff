@@ -13,17 +13,17 @@ require.config({
 
 // main
 
+/*
 require(['lib/modules/template'], function(template) {
   template.showName("Masoodqqqqqq");
 });
 
 
-/*
 require(['lib/modules/playlist'], function(template) {
  template.getJsonPlay("vw play");
 });
-*/
 
+*/
 
 
 /* news widget
@@ -39,8 +39,25 @@ require(['lib/modules/widget'], function(nw) {
 
 
 
-/* load container */
-require(['lib/modules/container'], function(container) {
-  container.init();
+/* load PlayerData */
+require(['lib/modules/loadPlayerData'], function(playerx) {
+  playerx.init();
+ // alert('asyn check');
+  var json = playerx.getPrivateFN();
+  var  containerfile = json[0].playlistmaster_template_map[0].playlistname.container.containerfile;
+  //alert(containerfile);
+  
+  
+	  /* load container */
+	require(['lib/modules/container'], function(container) {
+	  container.init(containerfile);
+	});
+	/* end container */
+  
+  
+  
 });
+
+
+
 

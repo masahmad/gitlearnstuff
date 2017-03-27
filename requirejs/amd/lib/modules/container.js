@@ -16,22 +16,18 @@ var jsonobj;
   },
   
   
-  init: function() {
-	alert('init called');
+  init: function(arg) {
+	console.log('module :container.js,   method: init , param: ' + arg);
     s = this.settings;
    // this.bindUIActions();
-   //this.loadContainer('split12.htm',7);
-   var rtn = this.getAjaxFN('http://localhost/playUX/api/playlistmasterapi/');
-   
-   console.log('xxxx');
-   console.log(rtn);
-	
-  },
+   this.loadContainer(arg,7);
+  	
+  }
   
   
   
   // bind
-  bindUIActions: function() {
+ ,bindUIActions: function() {
     s.moreButton.on("click", function() {
       NewsWidget.getMoreArticles(s.numArticles);
 	
@@ -41,15 +37,14 @@ var jsonobj;
 	
 	
 	
-	
  ,loadContainer(newTemplate, currentScreenContainerId) {
 	 
-	 alert('loadcontainer called');
+	 console.log('module: container, method: loadContainer');
 	 
 	// if (newTemplate.ScreenContainer != currentScreenContainerId) {
 		//var container = 'containers/' + newTemplate.ContainerFile;
 		var container = 'containers/' + newTemplate;
-		alert(container);
+		//alert(container);
 		s.parentContainer.empty();
 		s.parentContainer.load(container, function (responseTxt, statusTxt, xhr) {
 			if (statusTxt == "success") {
@@ -66,15 +61,6 @@ var jsonobj;
 			if (statusTxt == "error")
 				alert("Error: " + xhr.status + ": " + xhr.statusText);
 		});
-	//} 
-	/*
-	else {
-		this.Playlist(newTemplate);
-	}
-	*/
-	
-	
-	
 	 
  }
   
@@ -83,55 +69,9 @@ var jsonobj;
   
   ,getPrivateFN: function() { return privateVar;}
   
-  
-  ,getAjaxFN: function(arg) {   
-  
-  alert('get Ajax called');
-  	var dataz = 'templateClientKey=mas&fis=';
+ }
+   
 
-	$.ajax({
-		type : 'GET',
-		url : arg,
-		async : false,
-		jsonpCallback : 'jsonCallback',
-		contentType : "application/json",
-		dataType : 'json',
-		data : null, // multiple data sent using ajax
-		success : function (json) {
-			jsonobj = json;
-
-			/* copied */
-			//xvar MyPlayListTemplate
-			// save in global ref var
-			
-			//xplaylistsObj = jsonobj;
-			//xMyPlayListTemplate = jsonobj.MyPlayLists[0];
-			//xconsole.log(MyPlayListTemplate);
-			 //x loadContainer(MyPlayListTemplate, -1);
-
-			/* end  */
-			
-			alert('ajax success');
-			//console.log(json[0].playname);
-			//console.log(json);
-			
-			jsonobj=json;
-
-		},
-		error : function (e) {
-			console.log(e.message);
-			//alert('fail');
-			jsonobj = 'fail';
-		}
-	});
-	  
-  return jsonobj;
-  
-  } 
-  
-  
-  ,Playlist: function(a) {alert('playlist called')}
-  }
   
   return Container;
 });

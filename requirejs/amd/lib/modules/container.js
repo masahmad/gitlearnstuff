@@ -16,11 +16,11 @@ var jsonobj;
   },
   
   
-  init: function(arg) {
+  init: function(arg, conId ) {
 	console.log('module :container.js,   method: init , param: ' + arg);
     s = this.settings;
    // this.bindUIActions();
-   this.loadContainer(arg,7);
+   this.loadContainer(arg,conId);
   	
   }
   

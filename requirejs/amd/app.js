@@ -39,22 +39,27 @@ require(['lib/modules/widget'], function(nw) {
 
 
 
+
 /* load PlayerData */
 require(['lib/modules/loadPlayerData'], function(playerx) {
   playerx.init();
  // alert('asyn check');
   var json = playerx.getPrivateFN();
   var  containerfile = json[0].playlistmaster_template_map[0].playlistname.container.containerfile;
-  //alert(containerfile);
+  var  containerId = json[0].playlistmaster_template_map[0].playlistname.container.idcontainers;
   
   
 	  /* load container */
 	require(['lib/modules/container'], function(container) {
-	  container.init(containerfile);
+	  container.init(containerfile,containerId);
 	});
 	/* end container */
   
   
+  /* process playlist */
+  require(['lib/modules/playlist'], function(playlist) {
+	  playlist.init(json[0].playlistmaster_template_map);
+	});
   
 });
 

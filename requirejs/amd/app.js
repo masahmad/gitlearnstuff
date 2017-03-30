@@ -60,6 +60,8 @@ require(['lib/modules/loadPlayerData'], function(playerx) {
   require(['lib/modules/playlist'], function(playlist) {
 	  playlist.init(json[0].playlistmaster_template_map);
 	});
+	
+	
   
 });
 

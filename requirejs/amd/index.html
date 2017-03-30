@@ -3,6 +3,9 @@
 <head>
 <title>Testing</title>
 
+<script type="text/javascript" src="Scripts/CoolClock-master/coolclock.js"></script>
+<script type="text/javascript" src="Scripts/CoolClock-master/moreskins.js"></script>
+
 <script src="lib/require.js" data-main="app"></script>
 
 <style>
@@ -36,7 +39,7 @@ h1 + p{ background-color:yellow;}
 </head>
 
 
-<body>
+<body onload="CoolClock.findAndCreateClocks()">
 <div id='page'>
 <div id='container'>
 This is a  test
@@ -67,6 +70,21 @@ This is a  test
     <option value=”Firefox”>
     <option value=”Opera”>
 </datalist>
+
+
+
+
+<canvas id="clockid" class="CoolClock:Skin:Radius:noSeconds:GMTOffset"></canvas>
+
+
+
+
+<script>
+
+//CoolClock.findAndCreateClocks();
+</script>
+
+
 
 </body>
 

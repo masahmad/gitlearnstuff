@@ -17,10 +17,11 @@ var jsonobj;
   
   
   init: function(arg, conId ) {
-	console.log('module :container.js,   method: init , param: ' + arg);
+	console.log('module :Clocks Widget   method: init , param: ' + arg);
     s = this.settings;
+	CoolClock.findAndCreateClocks();
    // this.bindUIActions();
-   this.loadContainer(arg,conId);
+  // this.loadContainer(arg,conId);
   	
   }
   

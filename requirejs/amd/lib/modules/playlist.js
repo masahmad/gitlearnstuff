@@ -64,7 +64,6 @@ var jsonobj;
 	
 	//alert('w');
 	 console.log(widgets);
-	
 	 $(widgets).each(function(i,w) {
 		 //alert(i + ' ' + w.templateinstance.templateId +'  ' +  w.templateinstance.idtemplateInstance );
 		 

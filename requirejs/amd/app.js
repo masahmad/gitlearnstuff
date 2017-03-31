@@ -2,8 +2,20 @@ require.config({
   paths: {
     "jquery": "lib/jquery-3.1.1",
 	"underscore": "lib/underscore",
-	"methods": "lib/modules/methods"
+	"methods": "lib/modules/methods",
+	"CoolClock" : "scripts/CoolClock-master/coolclock"
   }
+  
+  
+  
+  /*,shim: {
+		"util": {
+			deps: ["jquery"],
+			exports: "CoolClock"
+		}
+  } */
+  
+  
 });
 
 
@@ -56,9 +68,12 @@ require(['lib/modules/loadPlayerData'], function(playerx) {
 	/* end container */
   
   
+  
   /* process playlist */
   require(['lib/modules/playlist'], function(playlist) {
 	  playlist.init(json[0].playlistmaster_template_map);
+	  
+	  CoolClock.findAndCreateClocks();
 	});
 	
 	

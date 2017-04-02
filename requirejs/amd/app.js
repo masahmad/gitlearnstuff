@@ -3,7 +3,7 @@ require.config({
     "jquery": "lib/jquery-3.1.1",
 	"underscore": "lib/underscore",
 	"methods": "lib/modules/methods",
-	"CoolClock" : "scripts/CoolClock-master/coolclock"
+	"clockswidget": "lib/modules/ClocksWidget"
   }
   
   
@@ -56,6 +56,7 @@ require(['lib/modules/widget'], function(nw) {
 require(['lib/modules/loadPlayerData'], function(playerx) {
   playerx.init();
  // alert('asyn check');
+ //alert('hello moto3');
   var json = playerx.getPrivateFN();
   var  containerfile = json[0].playlistmaster_template_map[0].playlistname.container.containerfile;
   var  containerId = json[0].playlistmaster_template_map[0].playlistname.container.idcontainers;
@@ -69,14 +70,27 @@ require(['lib/modules/loadPlayerData'], function(playerx) {
   
   
   
+  
+  
   /* process playlist */
   require(['lib/modules/playlist'], function(playlist) {
 	  playlist.init(json[0].playlistmaster_template_map);
 	  
-	  CoolClock.findAndCreateClocks();
+	  	  
+	  /*
+  require(['lib/modules/ClocksWidget'], function(clocks) {
+	  clocks.init();
+	});
+	*/
+	
+	  
 	});
 	
 	
+  
+  
+  
+  
   
 });
 

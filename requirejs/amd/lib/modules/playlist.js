@@ -1,4 +1,4 @@
-define(['underscore', 'jquery','methods'], function(_,$,methods) {
+define(['underscore', 'jquery','methods','clockswidget'], function(_,$,methods,clocks) {
   
   /*
   var getJsonPlay = function(n) {
@@ -49,10 +49,10 @@ var jsonobj;
 	
 	// processes the template part 
 	,processPlaylist(json) {
-		alert('ok am processing' + json.length);
+		alert('ok processing templates: ' + json.length);
 		
 		  $(json).each(function(i,item){
-        alert(i + ' ' + item.playlistname.name + '   timeout:' + item.playlistname.templatetimeout);
+        //alert(i + ' ' + item.playlistname.name + '   timeout:' + item.playlistname.templatetimeout);
 		//
 		Playlist.processWidget(item.playlistname.playlists);
     });
@@ -63,7 +63,8 @@ var jsonobj;
 ,processWidget(widgets) {
 	
 	//alert('w');
-	 console.log(widgets);
+console.log('processing ' + widgets.length + 'widgets');
+	console.log(widgets);
 	 $(widgets).each(function(i,w) {
 		 //alert(i + ' ' + w.templateinstance.templateId +'  ' +  w.templateinstance.idtemplateInstance );
 		 
@@ -73,26 +74,28 @@ var jsonobj;
 		 
  switch(templateid) {
     case 1:
-        //alert('1');
+        alert('1');
         break;
     case 2:
-        //alert('2');
+        alert('2');
         break;
 	
 case 3:
-        //alert('3');
+        alert('3');
         break;
 		
 		case 4:
-        //alert('4');
+        alert('4');
         break;
 	
 	case 5:
-        //alert('5');
+        alert('5');
         break;
 	
 	case 6:
-        //alert('6');
+        alert('6');
+		//we pass playlists[x] to init
+		clocks.init(w);
         break;
 	
 	

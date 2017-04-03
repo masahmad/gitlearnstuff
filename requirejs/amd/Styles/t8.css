@@ -1,0 +1,196 @@
+  
+  
+            .wrap {
+                /*margin-top: 100px; */
+				margin-top: 300px;
+                perspective: 1000px;
+                perspective-origin: 50% 50%;
+				-webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, transparent), to(rgba(255,255,255,0.2)));
+              
+            }
+
+				
+
+
+				.t8default .cube {
+                margin: auto;
+                position: relative;
+                height: 300px;
+                 /*width: 300px; */
+				width: 600px;
+                transform-style: preserve-3d;
+				
+            }
+
+				
+				
+				    .t8theme1 .cube {
+                margin: auto;
+                position: relative;
+                height: 300px;
+                 /*width: 300px; */
+				width: 600px;
+                transform-style: preserve-3d;
+				
+            }
+				
+				
+			
+			
+			
+           .t8theme2 .cube {
+                margin: auto;
+                position: relative;
+                height: 300px;
+                 /*width: 300px; */
+				width: 300px;
+                transform-style: preserve-3d;
+				
+            }
+			
+			
+			
+			
+
+                .cube div {
+                    position: absolute;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0.9;
+                    background-color: #222;
+                    border: solid 5px #888;
+                    color: #fff;
+                    font: 10px arial;
+                    transition: transform 4s ease-in;
+					overflow:hidden;
+					
+                }
+
+				
+			
+					.t8default div.left  { width: 300px; }
+				  	 .t8default div.right { width: 300px; left:300px;}
+				
+				
+				
+					 .t8theme1 div.left  { width: 300px; }
+				  	 .t8theme1 div.right { width: 300px; left:300px;}
+				
+				
+				
+				 .t8theme2 div.left  { width: 300px; }
+				  .t8theme2 div.right { width: 300px; left:0px;}
+				
+				
+				
+			
+
+
+
+			
+            .front {
+                
+				 transform: translateZ(200px);
+				 
+            }
+
+            .back {
+                transform: translateZ(-100px) rotateY(180deg);
+            }
+
+			
+            .right {
+                
+				transform: rotateY(-270deg) translateX(100px);
+                transform-origin: top right;
+            }
+
+			
+            .left {
+                
+				  transform: rotateY(270deg) translateX(-100px);
+                transform-origin: center left;
+            }
+			
+					
+
+            .top {
+                transform: rotateX(-270deg) translateY(-100px);
+                transform-origin: top center;
+            }
+
+            .bottom {
+                transform: rotateX(270deg) translateY(100px);
+                transform-origin: bottom center;
+            }
+
+			
+			
+            @keyframes rotate {
+                from {
+                    transform: rotateX(0deg) rotateY(0deg);
+                }
+
+                to {
+                    transform: rotateX(360deg) rotateY(360deg);
+                }
+            }
+
+            .t8default .cube {       animation: rotate 4s infinite linear;     }
+			.t8theme1 .cube {       animation: rotate 59s infinite linear;     }
+			.t8theme2 .cube {       animation: rotate 129s infinite linear;     }
+
+			/*
+            .wrap:hover .front {
+                transform: translateZ(300px);
+            }
+
+            .wrap:hover .back {
+                transform: translateZ(-200px) rotateY(180deg);
+            }
+
+            .wrap:hover .right {
+                transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+            }
+
+            .wrap:hover .left {
+                transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+            }
+
+            .wrap:hover .top {
+                transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+            }
+
+            .wrap:hover .bottom {
+                transform: rotateX(270deg) translateZ(100px) translateY(100px);
+            }
+			
+			*/
+			
+			
+            .hoverExpand .front {
+                transform: translateZ(300px);
+            }
+
+            .hoverExpand .back {
+                transform: translateZ(-200px) rotateY(180deg);
+            }
+
+            .hoverExpand .right {
+                transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+            }
+
+            .hoverExpand .left {
+                transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+            }
+
+            .hoverExpand .top {
+                transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+            }
+
+            .hoverExpand .bottom {
+                transform: rotateX(270deg) translateZ(100px) translateY(100px);
+            }
+        

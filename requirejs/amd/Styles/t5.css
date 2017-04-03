@@ -1,0 +1,400 @@
+
+
+
+
+
+
+/* start of T5 promo 4 box)  */
+
+
+
+
+.t5defaultpromocol
+{
+display:inline-block;
+margin:20px;
+}
+
+
+.t5defaultpromox
+{
+background-color:rgba(0,0,0,.5);
+border-radius: 20px;
+/*background-image:url('images/themes/glossy/blue200c.svg');*/
+/*background-image:url('images/themes/matte/lightblue.svg'); */
+/*background-size: 270px 500px;*/
+width:425px;
+height:850px;
+/*padding:20px;*/
+text-align:center;
+
+
+}
+
+
+
+
+
+.t5defaultpromoheading {
+
+ background-color: #f35627;
+ width:424px;
+ height:50px;
+ border-radius: 50px;
+ color: #fff;
+   font-family:arial;
+   font-size: 32px;
+    font-weight: bold;
+     text-shadow: 2px 2px #333;
+    
+ /*margin:auto;*/
+
+}
+
+.t5defaultpromoheading2 {
+background-color: #ffbf10;
+}
+
+
+.t5defaultpromoheading3 {
+background-color: #7db935;
+}
+
+
+
+.t5defaultpromocontent {
+  border-radius: 20px;
+  
+  height:280px;
+ /*background-color: rgb(255,204,0);*/
+ font-family: arial;
+  font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 20px;
+    padding: 10px;
+
+ color:#eee;
+
+}
+
+
+
+.t5defaultpromoprice {
+
+ font-family: arial;
+  font-size: 82px;
+    font-weight: bold;
+    font-style:  italic;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+     text-shadow: 4px 4px #000;
+
+}
+
+
+
+.t5defaultpromopic img {
+
+width:425px;
+height:335px;
+
+}
+
+/* end promo col styling */
+
+
+/* end of T5 promo 4 box)  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************  T5THEME2 start of T5 promo 4 box)  *******************/
+
+
+
+
+.t5theme2promocol
+{
+display:inline-block;
+margin:20px;
+}
+
+
+.t5theme2promox
+{
+background-color:rgba(0,0,255,.5);
+border-radius: 20px;
+
+width:425px;
+height:850px;
+text-align:center;
+}
+
+
+
+
+
+.t5theme2promoheading {
+
+ background-color: #00f;
+ width:424px;
+ height:50px;
+ /*border-radius: 50px; */
+ color: #fff;
+   font-family:arial;
+   font-size: 32px;
+    font-weight: bold;
+     text-shadow: 2px 2px #333;
+ 
+}
+
+.t5theme2promoheading2 {
+background-color: #0000ff;
+}
+
+
+.t5theme2promoheading3 {
+background-color: #7db935;
+}
+
+
+
+.t5theme2promocontent {
+  border-radius: 20px;
+  height:280px;
+ font-family: arial;
+  font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 20px;
+    padding: 10px;
+ color:#eee;
+
+}
+
+
+
+.t5theme2promoprice {
+
+ font-family: arial;
+  font-size: 82px;
+    font-weight: bold;
+    font-style:  italic;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+     text-shadow: 4px 4px #000;
+}
+
+
+
+.t5theme2promopic img {
+
+width:425px;
+height:335px;
+
+}
+
+/* end promo col styling */
+
+
+/* end of T5THEME2 promo 4 box)  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************  T5THEME3 start of T5 promo 4 box)  *******************/
+
+
+.t5theme3promocol
+{
+display:inline-block;
+margin:20px;
+}
+
+
+.t5theme3promox
+{
+background-color:rgba(220,20,199,.5);
+border-radius: 20px;
+
+width:425px;
+height:850px;
+text-align:center;
+}
+
+
+.t5theme3promoheading {
+ background-color: #dc14c7;
+ width:424px;
+ height:50px;
+ /*border-radius: 50px; */
+ color: #fff;
+   font-family:arial;
+   font-size: 32px;
+    font-weight: bold;
+     text-shadow: 2px 2px #333;
+ 
+}
+
+.t5theme3promoheading2 {
+background-color: #0000ff;
+}
+
+
+.t5theme3promoheading3 {
+background-color: #7db935;
+}
+
+
+.t5theme3promocontent {
+  border-radius: 20px;
+  height:280px;
+ font-family: arial;
+  font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 20px;
+    padding: 10px;
+ color:#eee;
+
+}
+
+
+.t5theme3promoprice {
+
+ font-family: arial;
+  font-size: 82px;
+    font-weight: bold;
+    font-style:  italic;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+     text-shadow: 4px 4px #000;
+}
+
+
+
+.t5theme3promopic img {
+width:325px;
+height:280px;
+
+}
+
+/* end promo col styling */
+/* end of T5THEME3 promo 4 box)  */
+
+
+
+
+
+
+
+
+
+
+/* ****************  T5THEME4 start of T5 promo 4 box)  *******************/
+
+
+.t5theme4promocol
+{
+display:inline-block;
+margin:20px;
+}
+
+
+.t5theme4promox
+{
+background-color:rgba(48,228,112,.5);
+border-radius: 20px;
+
+width:425px;
+height:850px;
+text-align:center;
+}
+
+
+.t5theme4promoheading {
+ background-color: #30e470;
+ width:424px;
+ height:50px;
+ /*border-radius: 50px; */
+ color: #fff;
+   font-family:arial;
+   font-size: 32px;
+    font-weight: bold;
+     text-shadow: 2px 2px #333;
+ 
+}
+
+.t5theme4promoheading2 {
+background-color: #0000ff;
+}
+
+
+.t5theme4promoheading3 {
+background-color: #7db935;
+}
+
+
+.t5theme4promocontent {
+  border-radius: 20px;
+  height:280px;
+ font-family: arial;
+  font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 20px;
+    padding: 10px;
+ color:#30e470;
+
+}
+
+
+.t5theme4promoprice {
+
+ font-family: arial;
+  font-size: 82px;
+    font-weight: bold;
+    font-style:  italic;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+     text-shadow: 4px 4px #000;
+}
+
+
+
+.t5theme4promopic img {
+width:325px;
+height:280px;
+
+}
+
+/* end promo col styling */
+/* end of T5THEME4 promo 4 box)  */
+
+
+
+

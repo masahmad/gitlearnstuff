@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Draggable, Moveable and Resizable DIV </title>
+    
+   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="js/save.js"></script>
+	<script src="js/html_string_persentage_parent.js"></script>
+    <style>
+         #divContainer, #divResize { 
+            border:dashed 1px #CCC; 
+            width:120px; 
+            height:120px; 
+            padding:5px; 
+            top:25px; 
+            font:13px Arial; 
+            cursor:move; 
+            float:left 
+        } 
+		
+		.content_block{
+		width:640px;
+		height:320px;
+		margin:auto;text-align:center;
+		border:8px solid #666;
+		 position:absolute;
+		overflow:auto;
+		}
+		
+		
+		.block{
+		 border:1px solid #000; 
+		 cursor:move; }
+		 
+		 .container{padding-top:20px;}
+    </style>
+</head>
+<body>
+  <body>
+<div class="container">
+<form name="form1" method="post">
+
+    <input type="button" class="btn btn-primary" style="float:left; margin-right:20px;" id="btClickMe" value="Create draggable DIV's" />
+
+	<input type="button" class="btn btn-success" value="Save string as Html" onclick="btnsubmit();">
+	  <input type="button" class="btn btn-primary" value="Redesign" onclick="Redesign();" >
+<input type="reset" class="btn btn-primary" value="Reset" onclick="window.location.reload();" >
+
+  <div> hello</div>
+   <p>vv</p>
+   <p>vv</p>
+</form>
+
+
+
+<div>
+	<div class="col-md-12 col-sm-12 col-xs-12 ">
+	   <div class="content_block"></div>
+	   <br><br>
+	 
+	   
+	   </div>
+	</div>
+</div> 
+</body>
+</body>
+
+</html>

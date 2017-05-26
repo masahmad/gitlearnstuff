@@ -1,0 +1,75 @@
+agile notes
+
+follow agile/ scrum techniques in that we do iterative development
+
+depending on project / size and complexity
+
+
+scrum process framework -  development cycles  called sprints
+xp framework - requires pair programming
+
+Scrum is most often used to manage complex software and product development, using iterative and incremental practices. Scrum significantly increases productivity and reduces time to benefits relative to classic “waterfall” processes. Scrum processes enable organizations to adjust smoothly to rapidly-changing requirements, and produce a product that meets evolving business goals. An agile Scrum process benefits the organization by helping it to
+
+    Increase the quality of the deliverables
+    Cope better with change (and expect the changes)
+    Provide better estimates while spending less time creating them
+    Be more in control of the project schedule and state
+
+------------------------------------------------------------------------------------
+
+Scrum
+
+plan 	plan	plan
+build	build	build
+test	test	test
+review	review	review
+
+3 artifacts
+product backlog
+release backlog ( sprint backlog) 
+burndown chart monitored while srints completed.
+
+
+
+
+3 ceromonies
+sprint planning
+daily scrum - highlight blockers
+sprint review (highlight how to improve)
+
+
+------------------------------------------------------------------------------------
+
+Example : develo product
+Features are written from user perspective / end user
+features known as userstory
+collection of features are PRODUCT BACKLOG - in other words its a wish list of features that would make a product great!
+
+
+roles:
+Product owner - decides on features that make it into product backlog - represents users
+Scrum master: ensure prject running, monitors work planning, schedules meetings. releaseplanning
+Developer
+TEster
+Customer:
+
+Example:
+product backlog (100 user stories) > Release backlog ( select 10) > prioritise  / estimate each item in release backlog
+
+sprint - can be  2 days to 30 days
+split release backlog in to sprints
+
+burndown chart -  get overview of progress and work remaning. monitor rate of productivity. calculate completion.
+
+daily scrum
+standup meeting
+highlight obstacles
+
+late finish of sprint indicates problems - and is highly visible.
+
+End of sprint have  scrum retrospective meeting to learn mistakes.
+
+
+Tool to use: OnTime
+
+--------------------------------------------------------------------------------------------------

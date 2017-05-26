@@ -1,0 +1,43 @@
+<h4>Create new Blog entry</h4>
+<hr/>
+<strong>This page shows Nested states & views. Click on below links to see Nested states in action.</strong>
+
+ <form>
+  <div class="form-group">
+    <label for="heading">Heading:</label>
+    <input type="heading" class="form-control" id="heading">
+  </div>
+  <div class="form-group">
+    <label for="pwd">category:</label>
+    <input type="category" class="form-control" id="cat">
+  </div>
+  
+    <div class="form-group">
+    <label for="content">content:</label>
+    <input type="content" class="form-control" id="content">
+  </div>
+  
+  <div class="form-group">
+    <label for="keywords">keywords:</label>
+    <input type="content" class="form-control" id="keywords">
+  </div>
+  
+    <div class="form-group">
+    <label for="datecreated">Date:</label>
+    <input type="datecreated" class="form-control" id="datecreated">
+  </div>
+  
+  
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> 
+
+
+<ul>
+	<li><a ui-sref=".products">Show Products</a></li>
+	<li><a ui-sref=".services">Show Services</a></li>
+</ul>
+
+<div class="panel panel-default" ui-view></div>

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<title>Angular Test Scope </title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<style>
+
+div { border: 1px solid red;}
+
+div.parent {width: 600px;}
+div.directive {width: 300px; margin:50px; border: 1px solid green;}
+
+</style>
+
+</head>
+
+
+
+<body ng-app="myApp">
+<h!> Test</h1>
+<div class='parent' ng-controller="mainCtrl">
+
+a= {{a}}
+b= {{b}}
+
+<div class='directive' message><div>
+</div>
+</body>
+
+</html>
+
+
+
+<script>
+
+
+var app = angular.module('myApp',[]);
+
+app.controller('mainCtrl',function($scope){
+$scope.a = 'hello Masood';
+});
+
+
+app.directive("message",function() {
+return {
+		template:'hello from the child directive {{a}}',
+		scope: true
+}
+
+});
+</script>
+

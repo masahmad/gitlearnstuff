@@ -1,0 +1,87 @@
+
+
+#formContainer 
+{
+    padding:5px;
+}
+
+
+
+
+
+#postform {
+ 
+ 
+   line-height:10px;
+  margin-left:200px;
+  width:500px;
+  background-color: #ccc !important;
+  background-image: -moz-linear-gradient(top, #eee 0%, #ccc 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eee), color-stop(100%, #ccc));
+  background-image: -webkit-linear-gradient(top, #eee 0%, #ccc 100%);
+  background-image: -ms-linear-gradient(top, #eee 0%, #ccc 100%);
+  background-image: -o-linear-gradient(top, #eee 0%, #ccc 100%);
+  background-image: linear-gradient(top, #eee 0%, #ccc 100%);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  -moz-box-shadow: -2px 2px 4px #666;
+  -webkit-box-shadow: -2px 2px 4px #666;
+  box-shadow: 5px 8px 4px #777;
+  }
+
+
+
+
+.button {
+  border-radius: 6px;
+  text-transform: uppercase;
+  background-repeat: repeat;
+}
+
+
+.button.green {
+  border: 1px solid #42aa44;
+  color: #fff;
+  text-shadow: 1px 1px #42aa44;
+  background: #7bc143;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a1cd3a 0%, #42aa44 50%, #7bc143 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1cd3a), color-stop(50%, #42aa44), color-stop(100%, #7bc143));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #a1cd3a 0%, #42aa44 50%, #7bc143 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #a1cd3a 0%, #42aa44 50%, #7bc143 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, #a1cd3a 0%, #42aa44 50%, #7bc143 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #a1cd3a 0%, #42aa44 50%, #7bc143 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1cd3a', endColorstr='#42aa44',GradientType=0 );
+  /* IE6-9 */
+}
+
+
+#postform input.fsSubmitButton {
+  text-align: left;
+  padding: 15px 30px;
+  margin-top: 0;
+  float: left;
+}
+
+
+.button.green:hover, .button.gray:hover, .button.orange:hover {
+    background-position: 0px 100%;
+}
+
+
+
+
+.button.gray, .button.green, .button.orange {
+    background-size: 100% 200%;
+    transition: all 0.15s linear 0s;
+}
+
+

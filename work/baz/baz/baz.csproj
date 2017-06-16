@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05C1751A-A00F-47F3-BF90-E7FEEE4F74E6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>baz</RootNamespace>
+    <AssemblyName>baz</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="mysql.data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>mysql\v2.0\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.web, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>mysql\v2.0\mysql.web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\css\bootstrap-theme.css" />
+    <Content Include="dist\css\bootstrap-theme.min.css" />
+    <Content Include="dist\css\bootstrap.css" />
+    <Content Include="dist\css\bootstrap.min.css" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\js\bootstrap.js" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="dist\js\jquery-1.11.2.min.js" />
+    <Content Include="dist\js\npm.js" />
+    <Content Include="images\bazaar.png" />
+    <Content Include="index.aspx" />
+    <Content Include="index.htm" />
+    <Content Include="adminlistsad.aspx" />
+    <Content Include="listsad.aspx" />
+    <Content Include="managead.aspx" />
+    <Content Include="myaccount.aspx" />
+    <Content Include="mybs\css\bootstrap.css" />
+    <Content Include="mybs\css\bootstrap.min.css" />
+    <Content Include="mybs\css\modern-business.css" />
+    <Content Include="mybs\font-awesome\css\font-awesome.css" />
+    <Content Include="mybs\font-awesome\css\font-awesome.min.css" />
+    <Content Include="mybs\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="mybs\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="mybs\js\bootstrap.js" />
+    <Content Include="mybs\js\bootstrap.min.js" />
+    <Content Include="mybs\js\contact_me.js" />
+    <Content Include="mybs\js\jqBootstrapValidation.js" />
+    <Content Include="mybs\js\jquery.js" />
+    <Content Include="mysql\Documentation\Licenses for Third-Party Components\license-us-secure-hash.html" />
+    <Content Include="mysql\Documentation\Licenses for Third-Party Components\license-zlib-net.html" />
+    <Content Include="mysql\Documentation\Licenses for Third-Party Components\license-zlib.html" />
+    <Content Include="mysql\Release Notes.txt" />
+    <Content Include="mysql\RT\MySql.Data.RT.dll" />
+    <Content Include="mysql\v2.0\mysql.data.cf.dll" />
+    <Content Include="mysql\v2.0\mysql.data.dll" />
+    <Content Include="mysql\v2.0\mysql.data.entity.dll" />
+    <Content Include="mysql\v2.0\mysql.web.dll" />
+    <Content Include="mysql\v4.0\mysql.data.dll" />
+    <Content Include="mysql\v4.0\mysql.data.entity.dll" />
+    <Content Include="mysql\v4.0\mysql.data.entity.EF6.dll" />
+    <Content Include="mysql\v4.0\mysql.web.dll" />
+    <Content Include="mysql\v4.5\mysql.data.dll" />
+    <Content Include="mysql\v4.5\mysql.data.entity.EF5.dll" />
+    <Content Include="mysql\v4.5\mysql.data.entity.EF6.dll" />
+    <Content Include="mysql\v4.5\mysql.web.dll" />
+    <Content Include="confirmEm.aspx" />
+    <Content Include="nicEdit\demos\demo01.html" />
+    <Content Include="nicEdit\demos\demo02.html" />
+    <Content Include="nicEdit\demos\demo03.html" />
+    <Content Include="nicEdit\demos\demo04.html" />
+    <Content Include="nicEdit\demos\demo05.html" />
+    <Content Include="nicEdit\nicEdit.js" />
+    <Content Include="nicEdit\nicEditorIcons.gif" />
+    <Content Include="previewad.aspx" />
+    <Content Include="signin.aspx" />
+    <Content Include="style\adbox.css" />
+    <Content Include="style\bazStyle.css" />
+    <Content Include="style\form.css" />
+    <Content Include="style\postform.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminlistsad.aspx.cs">
+      <DependentUpon>adminlistsad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlistsad.aspx.designer.cs">
+      <DependentUpon>adminlistsad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listsad.aspx.cs">
+      <DependentUpon>listsad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listsad.aspx.designer.cs">
+      <DependentUpon>listsad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="managead.aspx.cs">
+      <DependentUpon>managead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="managead.aspx.designer.cs">
+      <DependentUpon>managead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="myaccount.aspx.cs">
+      <DependentUpon>myaccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myaccount.aspx.designer.cs">
+      <DependentUpon>myaccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="previewad.aspx.cs">
+      <DependentUpon>previewad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="previewad.aspx.designer.cs">
+      <DependentUpon>previewad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="confirmEm.aspx.cs">
+      <DependentUpon>confirmEm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirmEm.aspx.designer.cs">
+      <DependentUpon>confirmEm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signin.aspx.designer.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Svr\mssql\DatabaseManager.cs" />
+    <Compile Include="Svr\mssql\dbManager.cs" />
+    <Compile Include="Svr\mysql\MySQLDatabaseManager.cs" />
+    <Compile Include="Svr\mysql\MySqldbManager.cs" />
+    <Compile Include="admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="test.Master.cs">
+      <DependentUpon>test.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.Master.designer.cs">
+      <DependentUpon>test.Master</DependentUpon>
+    </Compile>
+    <Compile Include="utils\EmailHelper.cs" />
+    <Compile Include="utils\utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\css\bootstrap-theme.css.map" />
+    <Content Include="dist\css\bootstrap.css.map" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="mysql\Documentation\ConnectorNET.chm" />
+    <Content Include="mysql\README" />
+    <Content Include="style\fonts\REZ.ttf" />
+    <Content Include="MasterPage.master" />
+    <Content Include="test.Master" />
+    <Content Include="mybs\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="mybs\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="mybs\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="mybs\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="mybs\font-awesome\less\bordered-pulled.less" />
+    <Content Include="mybs\font-awesome\less\core.less" />
+    <Content Include="mybs\font-awesome\less\fixed-width.less" />
+    <Content Include="mybs\font-awesome\less\font-awesome.less" />
+    <Content Include="mybs\font-awesome\less\icons.less" />
+    <Content Include="mybs\font-awesome\less\larger.less" />
+    <Content Include="mybs\font-awesome\less\list.less" />
+    <Content Include="mybs\font-awesome\less\mixins.less" />
+    <Content Include="mybs\font-awesome\less\path.less" />
+    <Content Include="mybs\font-awesome\less\rotated-flipped.less" />
+    <Content Include="mybs\font-awesome\less\spinning.less" />
+    <Content Include="mybs\font-awesome\less\stacked.less" />
+    <Content Include="mybs\font-awesome\less\variables.less" />
+    <Content Include="mybs\font-awesome\scss\font-awesome.scss" />
+    <Content Include="mybs\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="mybs\font-awesome\scss\_core.scss" />
+    <Content Include="mybs\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="mybs\font-awesome\scss\_icons.scss" />
+    <Content Include="mybs\font-awesome\scss\_larger.scss" />
+    <Content Include="mybs\font-awesome\scss\_list.scss" />
+    <Content Include="mybs\font-awesome\scss\_mixins.scss" />
+    <Content Include="mybs\font-awesome\scss\_path.scss" />
+    <Content Include="mybs\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="mybs\font-awesome\scss\_spinning.scss" />
+    <Content Include="mybs\font-awesome\scss\_stacked.scss" />
+    <Content Include="mybs\font-awesome\scss\_variables.scss" />
+    <Content Include="mybs\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="mybs\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="mybs\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="admin.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55161</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/baz</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
